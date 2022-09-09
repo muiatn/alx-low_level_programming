@@ -1,32 +1,29 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
 
-#include <stdarg.h>
-/**
- * struct print - structure for printing various types
- * @t: type to print
- * @f: function to print
- */
-typedef struct print
-{
-	char *t;
-	int (*f)(va_list);
-} print_t;
+#include <stdio.h>
+#include <stdlib.h>
 
 int _putchar(char c);
-int _printf(const char *format, ...);
-int print_c(va_list c);
-int print_s(va_list s);
-int print_i(va_list i);
-int print_d(va_list d);
-int print_u(va_list u);
-int print_b(va_list b);
-int print_o(va_list o);
-int print_x(va_list x);
-int print_X(va_list X);
-int print_p(va_list p);
-int print_S(va_list S);
-int print_r(va_list r);
-int print_R(va_list R);
+int _islower(int c);
+int _isalpha(int c);
+int _abs(int n);
+int _isupper(int c);
+int _isdigit(int c);
+int _strlen(char *s);
+void _puts(char *s);
+char *_strcpy(char *dest, char *src);
+int _atoi(char *s);
+char *_strcat(char *dest, char *src);
+char *_strncat(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n);
+int _strcmp(char *s1, char *s2);
+int _strncmp(char *s1, char *s2, int n);
+char *_memset(char *s, char b, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n);
+char *_strchr(char *s, char c);
+unsigned int _strspn(char *s, char *accept);
+char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystack, char *needle);
 
-#endif  /* _HOLBERTON_H */
+#endif /* HOLBERTON_H */
